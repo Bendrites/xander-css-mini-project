@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap%22">
+    <title>Checkout Page</title>
+</head>
+<body>
+    <header>
+        <img src="./assets/images/coffee_masters_logo.png" alt="Coffee Masters Logo">
+        <h5>Coffee Masters</h5>
+    </header>
+    <main>
+        <section class="items">
+            <h2>ITEMS</h2>
+            <div class="item-1">
+                <span class="qty">1x</span>
+                <span class="item">Cappuccino</span>
+                <span class="extras">Lite foam</span>
+                <span class="cost">$3.35</span>
+            </div>
+            <div class="item-2">
+                <span class="qty">1x</span>
+                <span class="item">Cappuccino</span>
+                <span class="extras">
+                    <ul>
+                        <li>Lite milk</li>
+                        <li>Double espresso</li>
+                    </ul>
+                </span>
+                <span class="cost">$3.85</span>
+            </div>
+            <div class="item-3">
+                <span class="qty">1x</span>
+                <span class="item">Croissant</span>
+                <span class="extras">Butter</span>
+                <span class="cost">$2.45</span>
+            </div>
+        </section>
+        <section class="customer-info">
+            <h2>NAME</h2>
+                <form>
+                    <div>
+                        <label for="name">Name for order</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name">
+                    </div>
+                </form>
+        <section class="payment-info">
+            <h2>PAYMENT</h2>
+                <form>
+                    <div>
+                        <label for="card-number">Card Number</label>
+                        <input type="text" id="card-number" name="card-number" placeholder="Enter your card number">
+                    </div>
+                    <div>
+                        <label for="cvv">CVV number</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="Enter your CVV number">
+                    </div>
+                </form>
+        </section>
+        <section class="order-total">
+            <table>
+                <tr>
+                    <td>Subtotal:</td>
+                    <td>$9.65</td>
+                </tr>
+                <tr>
+                    <td>Tax:</td>
+                    <td>$0.82</td>
+                </tr>
+                <tr>
+                    <td>Total:</td>
+                    <td>$10.47</td>
+                </tr>
+            </table>
+            <div class="order">
+                <button class="press" type="submit">Place Order</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
