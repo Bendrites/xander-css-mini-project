@@ -7,7 +7,11 @@
     --beige: #eee1d5;
     --white: #efefef;
     --light-brown: #b08968;
+    --black: #171321;
     --soft-orange: hsl(35, 77%, 62%);
+    --mono: "Inter", monospace;
+    --sans: sans-serif;
+    --font-size: 15px;
 }
 
 html {
@@ -16,7 +20,7 @@ html {
 
 body {
     background-color: var(--brown);
-    font-family: "Open Sans", sans-serif;
+    font-family: var(--mono);
     margin: 0;
     padding: 0;
     color: var(--brown);
@@ -24,19 +28,21 @@ body {
 
 /* Header Section */
 
-header {
+.header {
     background-color: var(--beige);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 20px 50px;
+    padding: 8px;
+    font-size: 15px;
+    margin: 0;
 }
 
-header img {
-    width: 50px;
+.header img {
+    width: 40px;
 }
 
-header h5 {
+.header p {
     font-weight: 700;
     font-size: 24px;
 }
