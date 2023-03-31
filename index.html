@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,81 +9,83 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap%22">
     <title>Checkout Page</title>
 </head>
-
 <body>
-    <header class="header">
+    <nav class="header">
         <img src="./assets/images/coffee_masters_logo.png" alt="Coffee Masters Logo">
         <p>Coffee Masters</p>
-    </header>
-
-    <section class="items container1">
-        <h2>ITEMS</h2>
-        <div class="item 1">
-            <h4>Cappuccino</h4>
-            <p class="qty">1x</p>
-            <p class="extras">Lite foam</p>
-            <p class="cost">$3.35</p>
-        </div>
-        <div class="item 2">
-            <h4>Cappuccino</h4>
-            <p class="qty">1x</p>
-            <p class="extras">Lite milk, Double Espresso</p>
-            <p class="cost">$3.85</p>
-        </div>
-        <div class="item 3">
-            <h4>Croissant</h4>
-            <p class="qty">1x</p>
-            <p class="extras">Butter</p>
-            <p class="cost">$2.45</p>
-        </div>
-    </section>
-    
-    <section class="container2">
-        <div class="customer-info">
-            <h2>NAME</h2>
-            <form>
-                <div class="">
-                    <label for="name">Name for order</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name">
+    </nav>
+    <div class="main">
+        <section class="order-items container box1">
+            <h2>ITEMS</h2>
+            <div class="order-box">
+                <div class="item">
+                    <p>1x</p>
+                    <ul>
+                        <li>Cappuccino</li>
+                        <li class="extras">Lite foam</li>
+                    </ul>
                 </div>
-            </form>
-        </div>
-    </section>
-
-    <section class="container3">
-        <div class="payment-info">
-            <h2>PAYMENT</h2>
-            <form>
-                <div>
-                    <label for="card-number">Card Number</label>
-                    <input type="text" id="card-number" name="card-number" placeholder="Enter your card number">
-                </div>
-                <div>
-                    <label for="cvv">CVV number</label>
-                    <input type="text" id="cvv" name="cvv" placeholder="Enter your CVV number">
-                    </div>
-            </form>
-        </div>
-    </section>
-        <div class="order-total">
-            <table>
-                <tr>
-                    <td>Subtotal</td>
-                    <td>$9.65</td>
-                </tr>
-                <tr>
-                    <td>Tax:</td>
-                    <td>$0.82</td>
-                </tr>
-                <tr>
-                    <td>Total:</td>
-                    <td>$10.47</td>
-                </tr>
-            </table>
-            <div class="btn-box">
-                <button type="button">Place Order</button>
+                <p>$3.35</p>
             </div>
-        </div>
-
+            <div class="order-box">
+                <div class="item">
+                    <p>1x</p>
+                    <ul>
+                        <li>Cappuccino</li>
+                        <li class="extras">Lite milk</li>
+                        <li class="extras">Double espresso</li>
+                    </ul>
+                </div>
+                <p>$3.85</p>
+            </div>
+            <div class="order-box">
+                <div class="item">
+                    <p>1x</p>
+                    <ul>
+                        <li>Croissant</li>
+                        <li class="extras">Butter</li>
+                    </ul>
+                </div>
+                <p>$2.45</p>
+            </div>
+        </section>
+        <section class="order-name container box2">
+            <h2>NAME</h2>
+            <div class="customer-name">
+                <div class="">
+                    <label for="name" class="input">Name for order</label>
+                    <input id="name" class="example" placeholder="Ford prefect">
+                </div>
+            </div>
+        </section>
+        <section class="order-payment container box3">
+            <h2>PAYMENT</h2>
+            <div class="payment-info">
+                <label for="card-number" class="input">Card number</label>
+                <input id="card-number" class="example" placeholder="1234 5678 9012 3456">
+            </div>
+            <div class="payment-info">
+                <label for="cvv" class="input">CVV number</label>
+                <input id="cvv" class="example" placeholder="001">
+            </div>
+        </section>
+        <section class="place-order box4">
+            <div class="order-total">
+                <div>
+                    <p>Subtotal:</p>
+                    <p>Tax:</p>
+                    <p>Total:</p>
+                </div>
+                <div>
+                    <p>$9.65</p>
+                    <p>$0.82</p>
+                    <p>$10.47</p>
+                </div>
+                <div class="btn-box">
+                    <button type="button">Place o  rder</button>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
